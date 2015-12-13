@@ -1,8 +1,9 @@
-# BUEZE Webservice
+# BUEZE Webservice  
+[ ![Codeship Status for BUEZE/bueze_dynamo](https://codeship.com/projects/6f6cef10-8395-0133-fb5f-2e117485f168/status?branch=master)](https://codeship.com/projects/121797)  
 A simple version of web service that scrapes TAAZE data using the
 [taaze](https://github.com/BUEZE/taaze) gem with continuous development using CodeShip, Heroku, and DynamoDB.
 
-Here's the [link]() to our project.
+Here's the [link](https://buezedynamo.herokuapp.com) to our project.
 
 ### Handles:
 
