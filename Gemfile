@@ -14,6 +14,11 @@ gem 'hirb'
 gem 'slim'
 gem 'sinatra-flash'
 
+# gems requiring credentials for 3rd party services
+gem 'config_env'
+gem 'aws-sdk', '~> 2'
+gem 'dynamoid', '~> 1'
+
 group :test do
   gem 'minitest'
   gem 'rack'
