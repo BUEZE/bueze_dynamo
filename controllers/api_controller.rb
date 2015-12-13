@@ -11,6 +11,14 @@ class BuezeDynamo < Sinatra::Base
     end
   end
 
+  get_homepage = lambda do
+    'BuezeDynamo service is up and working. See more info at it\'s ' \
+    '<a href="https://github.com/BUEZE/bueze_dynamo">' \
+    'Github repo</a>' \
+    '<br> Current Version: '\
+    '0.0.1'
+  end
+
   get_user = lambda do
     content_type :json, charset: 'utf-8'
     get_userinfo(params[:user_id]).to_json
@@ -80,6 +88,7 @@ class BuezeDynamo < Sinatra::Base
   end
 
   # Web API Routes
+  get '/', &get_homepage
   get '/api/v1/user/:user_id', &get_user
   get '/api/v1/collections/:user_id.json', &get_user_collections
   get '/api/v1/comments/:user_id.json', &get_user_comments
