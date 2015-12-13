@@ -8,15 +8,6 @@ BOOK_ID = %w(11100763435 11100745134 11100714084 11303096752)
 user_from_file = YAML.load(File.read('./spec/fixures/user.yml'))
 tags_from_file = YAML.load(File.read('./spec/fixures/tags.yml'))
 
-describe 'Getting the root of the service' do
-  it 'should return ok' do
-    get '/'
-    # p last_response
-    last_response.must_be :ok?
-    last_response.body.must_match(/bueze/i)
-  end
-end
-
 describe 'Getting the user data' do
   USER_ID.each do |user_id|
     it 'should get their infos' do
@@ -36,7 +27,7 @@ describe 'Getting the user data' do
       get "/api/v1/user/#{random_num(8)}"
     end
     body = JSON.parse(last_response.body)
-    if (body['collections'].size == 0 && body['comments'].size == 0)
+    if body['collections'].size == 0 && body['comments'].size == 0
       puts "\nThe user #{random_num(8)} may not exists since there's no any collections nor comments of this user"
     end
   end

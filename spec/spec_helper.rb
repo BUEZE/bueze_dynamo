@@ -9,7 +9,7 @@ require 'webmock/minitest'
 include Rack::Test::Methods
 
 def app
-  AppController
+  BuezeDynamo
 end
 
 def random_num(n)
