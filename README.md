@@ -2,7 +2,7 @@
 A simple version of web service that scrapes TAAZE data using the
 [taaze](https://github.com/BUEZE/taaze) gem with continuous development using CodeShip, Heroku, and DynamoDB.
 
-Here's the [link](http://bueze.herokuapp.com/) to our project.
+Here's the [link]() to our project.
 
 ### Handles:
 
