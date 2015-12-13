@@ -14,6 +14,9 @@
 /tmp/
 # Gemfile.lock
 
+## Configurations:
+config/config_env.rb
+
 ## Specific to RubyMotion:
 .dat*
 .repl_history
