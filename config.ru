@@ -1,2 +1,4 @@
-Dir.glob('./{models,helpers,controllers}/*.rb').each { |file| require file }
-run AppController
+Dir.glob('./{config,models,helpers,controllers}/*init.rb').each do |file|
+  require file
+end
+run BuezeDynamo
