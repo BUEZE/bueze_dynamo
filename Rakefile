@@ -21,8 +21,8 @@ namespace :db do
   desc "Create bookrankings table"
   task :migrate do
     begin
-      Bookrankings.create_table
-      puts 'Bookrankings table created'
+      Bookranking.create_table
+      puts 'Bookranking table created'
     rescue Aws::DynamoDB::Errors::ResourceInUseException => e
       puts 'Bookrankings table already exists'
     end
